@@ -1,14 +1,14 @@
 Dim s As String = ""
-Dim Char As String = ""
+Dim Character As String = ""
 Dim Legnth As Integer = 0
 Dim newword As String = ""
 
  Console.Write ("Enter String")
  s = Console.Readline
  
- Char = LEFT (s,1)
+ Character = LEFT (s,1)
  For Count 2 to LEN(s)
-   If UCase(Char) = UCase(MID(s,count,1)) Then
+   If UCase(Character) = UCase(MID(s,count,1)) Then
     newword = newword & "*"
    Else 
     newword = newword & MID(s,count,1)
