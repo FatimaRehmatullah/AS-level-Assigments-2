@@ -1,1 +1,25 @@
-jj
+Dim new As String = ""
+Dim s As String = ""
+Dim LocN As Integer = 0
+Dim LocB As integer = 0
+
+Console.Write("Enter string: ")
+s = Console.Readline
+
+LocN = Instr(s,"not")
+LocB = Instr(s,"bad")
+
+  If LocB > LocN Then
+   For Count = 1 to LocN-1
+     new = new & MID(s,count,1)
+   Next
+    
+new = new & "good"
+ 
+    For Count =LocN+3 to LEN(s)
+     new = new & MID(s,count,1)
+   Next
+   
+   Console.Write(new)
+   
+   Console.Readkey
