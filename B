@@ -1,0 +1,19 @@
+Dim s as string = ""
+Dim Legnth As String = ""
+Dim First As String = ""
+Dim Last As String = ""
+
+ Console.Write ("Enter String s")
+ s = Console.Readline
+ 
+ Legnth = LEN (s)
+ First = LEFT (s,2)
+ Last = Right (s,2)
+ 
+  If legnth < 2 then
+     Console.Write ("")
+  ELSE 
+     Console.Write (First & Last)
+  End IF
+
+ Console.Readkey
