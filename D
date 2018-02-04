@@ -5,6 +5,11 @@ Dim Bfirst As String = ""
 Dim newA As String = ""
 Dim newB As String = ""
 
+Console.Write ("Enter String 1: ")
+A = Console.Readline
+Console.Write ("Enter String 2: ")
+B = Console.Readline
+
 Afirst = LEFT(a,2)
 Bfirst = LEFT(b,2)
 newA = newA & Bfirst
