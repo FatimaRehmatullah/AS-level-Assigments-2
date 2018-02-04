@@ -6,7 +6,7 @@ Dim Last As String = ""
  Console.Write ("Enter String s")
  s = Console.Readline
  
- Legnth = LEN (s)
+ Length = LEN (s)
  First = LEFT (s,2)
  Last = Right (s,2)
  
