@@ -1,4 +1,4 @@
-Dim new As String = ""
+Dim newstr As String = ""
 Dim s As String = ""
 Dim LocN As Integer = 0
 Dim LocB As integer = 0
@@ -11,16 +11,16 @@ LocB = Instr(s,"bad")
 
   If LocB > LocN Then
    For Count = 1 to LocN-1
-     new = new & MID(s,count,1)
+     newstr = newstr & MID(s,count,1)
    Next
     
-new = new & "good"
+newstr = newstr & "good"
  
     For Count =LocN+3 to LEN(s)
-     new = new & MID(s,count,1)
+     newstr = newstr & MID(s,count,1)
    Next
   Endif
   
-   Console.Write(new)
+   Console.Write(newstr)
    
    Console.Readkey
