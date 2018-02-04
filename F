@@ -23,6 +23,7 @@ If LEN(A) Mod 2 = 0 Then
  Next
  For Count =(LEN(A)/2) + 1.5
     LastA = LastA & MID(A,count,1)
+ Next
 EndIf
 
 If LEN(B) Mod 2 = 0 Then
@@ -38,6 +39,7 @@ If LEN(B) Mod 2 = 0 Then
  Next
  For Count =(LEN(B)/2) + 1.5
     LastB = LastB & MID(B,count,1)
+ Next
 EndIf
 
 Console.Writeline(FirstA & FirstB & LastA & LastB)
