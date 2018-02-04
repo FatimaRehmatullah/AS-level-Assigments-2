@@ -19,7 +19,8 @@ new = new & "good"
     For Count =LocN+3 to LEN(s)
      new = new & MID(s,count,1)
    Next
-   
+  Endif
+  
    Console.Write(new)
    
    Console.Readkey
