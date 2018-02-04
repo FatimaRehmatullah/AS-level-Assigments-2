@@ -21,7 +21,7 @@ If LEN(A) Mod 2 = 0 Then
  For Count = 1 to (LEN(A)/2) + 0.5
     FirstA = FirstA & MID(A, count, 1)
  Next
- For Count =(LEN(A)/2) + 1.5
+ For Count =(LEN(A)/2) + 1.5 To LEN(A)
     LastA = LastA & MID(A,count,1)
  Next
 EndIf
@@ -34,10 +34,10 @@ If LEN(B) Mod 2 = 0 Then
     LastB = LastB & MID(B,count,1)
  Next
  Else
- For Count = 1 to (LEN(B)/2) + 0.5
+ For Count = 1 to (LEN(B)/2) + 0.5 
     FirstB = FirstB & MID(B, count, 1)
  Next
- For Count =(LEN(B)/2) + 1.5
+ For Count =(LEN(B)/2) + 1.5 To LEN(B)
     LastB = LastB & MID(B,count,1)
  Next
 EndIf
