@@ -1,0 +1,23 @@
+Dim A As String = ""
+Dim B As String = ""
+Dim Afirst As String = ""
+Dim Bfirst As String = ""
+Dim newA As String = ""
+Dim newB As String = ""
+
+Afirst = LEFT(a,2)
+Bfirst = LEFT(b,2)
+newA = newA & Bfirst
+newB = newB & Afirst
+
+For Count = 3 to LEN(B)
+   newB = newB & MID(B,count,1)
+Next
+
+For Count = 3 to LEN(A)
+   newA = newA & MID(A,count,1)
+Next
+
+Console.Write( newA & " " & newB)
+
+Cosole.Readkey
