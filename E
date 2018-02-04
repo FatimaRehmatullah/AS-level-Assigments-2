@@ -4,7 +4,7 @@ Dim LocN As Integer = 0
 Dim LocB As integer = 0
 
 Console.Write("Enter string: ")
-s = Console.Readline
+s = UCase(Console.Readline)
 
 LocN = Instr(s,"not")
 LocB = Instr(s,"bad")
