@@ -1,5 +1,5 @@
 Dim s as string = ""
-Dim Legnth As String = ""
+Dim Length As Integer = 0
 Dim First As String = ""
 Dim Last As String = ""
 
@@ -10,7 +10,7 @@ Dim Last As String = ""
  First = LEFT (s,2)
  Last = Right (s,2)
  
-  If legnth < 2 then
+  If length < 2 then
      Console.Write ("")
   ELSE 
      Console.Write (First & Last)
