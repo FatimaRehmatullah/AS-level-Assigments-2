@@ -25,4 +25,4 @@ Next
 
 Console.Write( newA & " " & newB)
 
-Cosole.Readkey
+Console.Readkey
