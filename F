@@ -1,0 +1,45 @@
+Dim A As String = ""
+Dim B As String = ""
+Dim FirstB As String = ""
+Dim FirstA As String = ""
+Dim LastB As String = ""
+Dim LastA As String = ""
+
+Console.Write("Enter string 1: ")
+A = Console.Readline
+Console.Write("Enter string 2: ")
+B = Console.Readline
+
+If LEN(A) Mod 2 = 0 Then
+ For count = 1 to LEN(A)/2
+    FirstA = FirstA & MID(A, count, 1)
+ Next
+ For count = (LEN(A)/2) + 1 To LEN(A)
+    LastA = LastA & MID(A,count,1)
+ Next
+ Else
+ For Count = 1 to (LEN(A)/2) + 0.5
+    FirstA = FirstA & MID(A, count, 1)
+ Next
+ For Count =(LEN(A)/2) + 1.5
+    LastA = LastA & MID(A,count,1)
+EndIf
+
+If LEN(B) Mod 2 = 0 Then
+ For count = 1 to LEN(B)/2
+    FirstB = FirstB & MID(B, count, 1)
+ Next
+ For count = (LEN(B)/2) + 1 To LEN(B)
+    LastB = LastB & MID(B,count,1)
+ Next
+ Else
+ For Count = 1 to (LEN(B)/2) + 0.5
+    FirstB = FirstB & MID(B, count, 1)
+ Next
+ For Count =(LEN(B)/2) + 1.5
+    LastB = LastB & MID(B,count,1)
+EndIf
+
+Console.Writeline(FirstA & FirstB & LastA & LastB)
+
+Console.Readkey
