@@ -16,7 +16,7 @@ LocB = Instr(s,"bad")
     
 newstr = newstr & "good"
  
-    For Count =LocN+3 to LEN(s)
+    For Count =LocB+3 to LEN(s)
      newstr = newstr & MID(s,count,1)
    Next
   Endif
