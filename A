@@ -1,0 +1,12 @@
+Dim count As integer=0
+ 
+Console.Write("Enter number of donuts ")
+count = Console.ReadLine
+            
+ IF Count < 10 Then
+ Console.Write ("Number of donuts: " & count)
+ Else
+ Console.Write ("Number of donuts: many")
+ End If
+            
+ Console.Readkey
